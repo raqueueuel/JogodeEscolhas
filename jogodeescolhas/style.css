@@ -1,0 +1,72 @@
+body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: rgb(252, 252, 252) !important;
+    background-image: radial-gradient(circle, black, crimson)
+  }
+  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+  }
+
+  h1 {
+    text-transform: capitalize !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    color:white;
+    font-weight: 700;
+    text-shadow: 10px 15px 10px rgba(0,0,0,0.6);
+    animation: come-in 2s;
+}
+
+h1:hover {
+    transform: scale(1.05);
+    transition: scale 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes come-in {
+    from {transform: translateY(-80px);}
+    to {transform: translateY(0);}
+}
+
+h2{
+    text-transform: capitalize !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    color:white;
+    font-weight: 700;
+    text-shadow: 10px 15px 10px rgba(0,0,0,0.6);
+    animation: come-in 2s;
+}
+
+.mother {
+  display: flex;
+  align-items: flex-start;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}

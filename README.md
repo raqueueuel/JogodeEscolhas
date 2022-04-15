@@ -9,5 +9,5 @@ Também foi utilizada como canção que as personagens cantam na hipótese de vi
 # Fluxograma
 Foi realizado um pequeno fluxograma a fim de dispor sobre as implicações do jogo. Para isso, foi utilizada a plataforma Miro, como segue :
 <p align="center">
-  <img src="Flowchart Template.jpg" width="350" alt="fluxograma">
+  <img src="/documents/Flowchart Template.jpg" width="350" alt="fluxograma">
 </p>

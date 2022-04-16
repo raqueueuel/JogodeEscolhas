@@ -9,7 +9,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="jogodeescolhas/scripts/estai1.js"></script>
+   <!--Nota : Por algum motivo, creio que do meu sistema operacional que fez uma
+              ...total confusão ao gerenciar as pastas, eu não consegui importar o script em outro arquivo
+              ... próprio para JS. Desse modo, optei por usar o script local aqui mesmo, mesmo sabendo que não é
+              ... a melhor prática. -->
+   <script>
+     function escolha() {
+    let escolhaFase1 = prompt("Você escolhe a opção 1 ou a opção 2?");
+
+    if (escolhaFase1 == 1) {
+        alert("Você busca se soltar dos guardas e consegue pisar no pé de um deles, se soltando brevemente. O Monsenhor grita para que lhe segurem, no que você leva um soco, cai e jogam um saco de pano sobre sua cabeça. Quando vocẽ acorda, está amarrada a um tronco e prestes a ser queimada. Fim do jogo.");
+        location.assign("index.html");
+    } else if (escolhaFase1 == 2) {
+        alert("Você se aquieta e diz para um dos guardas que não precisa lhe segurar, você seguirá andando. Com certeza deve haver algum engano; você respira e segue, seja lá para onde esteja indo.");
+        location.assign("jogodeescolhas/personagens/estai2.html");
+    } else {
+        alert("Por mais que seja difícil, você deve escolher. Digite 1 ou 2 para fazer a escolha de Estai.");
+        escolha();
+    }
+
+}
+   </script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <!-- Fonte do Google-->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -34,6 +54,10 @@
       </p>
     <br>
     <hr>
+    <p>Você decide...<br>
+      1 - Reagir. 
+      2 - Seguir. 
+    </p>
     <button type="button" class="button" onclick="escolha()">Escolha</button>
     <br>
   </div>

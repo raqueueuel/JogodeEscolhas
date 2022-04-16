@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>As Bruxas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylechars.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <!--Nota : Por algum motivo, creio que do meu sistema operacional que fez uma
+              ...total confusão ao gerenciar as pastas, eu não consegui importar o script em outro arquivo
+              ... próprio para JS. Desse modo, optei por usar o script local aqui mesmo, mesmo sabendo que não é
+              ... a melhor prática. -->
+   <script>
+     function escolha() {
+    let escolhaFase2 = prompt("Você escolhe a opção 1 ou a opção 2?");
+
+    if (escolhaFase2 == 1) {
+        alert("Você solta a pedra imediatamente e se afasta da janela, quando o guarda entra. “Desculpe, estava apenas cantando”. O guarda olha atentamente e diz : “vou levá-la ao Monsenhor”. Infelizmente você é levada, passa por coisas inimagináveis e, no dia seguinte, vai para a fogueira. Fim do Jogo.");
+        window.location.assign("/home/raquel/Documentos/GitHub/jogodeescolhas/index.html");
+    } else if (escolhaFase2 == 2) {
+        alert("Você pula pela janela e cai em um monte de árvores e arbustos. Apesar da dor na costela e dos joelhos ralados, você parece estar bem para uma queda tão grande. Ao fundo, consegue ouvir os guardas gritando e começa a correr pelo bosque.");
+        window.location.assign("/home/raquel/Documentos/GitHub/jogodeescolhas/jogodeescolhas/personagens/finalestai.html");
+    } else {
+        alert("Por mais que seja difícil, você deve escolher. Digite 1 ou 2 para fazer a escolha de Estai.");
+        escolha();
+    }
+
+}
+   </script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <!-- Fonte do Google-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
 </head>
 <body>
-    Estai 2
+  <div class="container text-center">
+    <h1>Cenário 2 : Interrogatório </h1>
+    <hr>
+    <br> 
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/64GhshX/estai.png" alt="estai" id="image"></a>
+    <br>
+    <br>
+    <p>Era uma sala escura um tanto escura, mesmo que todos os cômodos do castelo assim o sejam. Eu estava sentada nessa cadeira de madeira, olhando assustada para todos os lados, ainda processando o que estava acontecendo :</p>
+    <br>
+    <p>- O que ele está dizendo? - Perguntou o Monsenhor.<br></p>
+    <p>- Ele…? - Perguntei assustada, encarando-o. O homem sorriu, com desdém, e rapidamente levantou sua mão, golpeando meu rosto. 
+        Eu caí da cadeira com o impacto e as lágrimas rolaram pelo meu rosto. Não entendia porque aquilo estava acontecendo. 
+        <br>
+        - O Diabo insiste em zombar na presença de um servo de Deus. Joguem-na numa cela. Amanhã, iremos retirar tal presença maligna purificando-a com o fogo santo. 
+      <br>
+      </p>
+      <p>Nunca fui tão religiosa, pensei. Ainda assim, não consigo acreditar que este indivíduo tem quaisquer semelhanças com Nosso Senhor ou qualquer coisa de Santo; em bem verdade, ele se aparenta mais com a definição de Diabo que sempre me contaram, ou então, de fato, irei passar a negar esse tal Deus que eles assumem. 
+    </p>
+       <br>
+      <p>(...)</p>
+    <br>
+    <p>A cela era fria e úmida. Havia uma pequena janela que mostrava o céu escuro do lado de fora da masmorra, que dava para o bosque. Tudo bem, seria improvável sobreviver a uma queda de 5 braças, mas a liberdade me sussurrava… talvez eu devesse tentar. 
+    </p>
+    <br>
+    <p>Apanhei uma pedra solta do chão da cela e comecei a bater contra as grades da janela. As grades soltaram-se uma a uma, mas o barulho despertou um guarda que surgiu à porta :
+       - Ei! O que está fazendo?! - Virei-me bruscamente assustada. 
+        </p>
+    <hr>
+    <p>Você decide...<br>
+      1 - Parar, desistir da fuga e tentar disfarçar dizendo que estava cantando uma canção. 
+      2 - Pular rapidamente pela janela. 
+    </p>
+    <button type="button" class="button" onclick="escolha()">Escolha</button>
+    <br>
+    <br>
+  </div>
 </body>
 </html>

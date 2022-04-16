@@ -8,13 +8,13 @@
 body {
     font: 400 15px/1.8 Lato, sans-serif;
     color: rgb(252, 252, 252) !important;
-    background-image: radial-gradient(circle, crimson, black)
-  }
+    background-image: radial-gradient(circle, rgb(139, 15, 40), black)
+
+}
   
  
 
   h1 {
-    text-transform: capitalize !important;
     font-family: 'Times New Roman', Times, serif !important;
     color:white;
     font-weight: 700;

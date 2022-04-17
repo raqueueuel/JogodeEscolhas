@@ -4,6 +4,11 @@ body {
     background-image: radial-gradient(circle, black, crimson)
   }
   
+  p{
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+  }
+  
   .navbar {
     font-family: Montserrat, sans-serif;
   }

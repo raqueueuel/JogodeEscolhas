@@ -37,6 +37,9 @@ h2{
     animation: come-in 2s;
 }
 
+.icone{
+  filter: contrast(120%);
+}
 .mother {
   display: flex;
   align-items: flex-start;

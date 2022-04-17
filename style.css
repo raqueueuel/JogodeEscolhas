@@ -39,6 +39,7 @@ h2{
 
 .icone{
   filter: contrast(120%);
+  filter:brightness(180%);
 }
 .mother {
   display: flex;

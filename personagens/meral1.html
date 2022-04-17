@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>As Bruxas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylechars.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <!--Nota : Por algum motivo, creio que do meu sistema operacional que fez uma
+              ...total confusão ao gerenciar as pastas, eu não consegui importar o script em outro arquivo
+              ... próprio para JS. Desse modo, optei por usar o script local aqui mesmo, mesmo sabendo que não é
+              ... a melhor prática. -->
+   <script>
+     function escolha() {
+    let escolhaFase1 = prompt("Você escolhe a opção 1 ou a opção 2?");
+
+    if (escolhaFase1 == 1) {
+        alert(" ");
+        window.location.assign("../index.html");
+    } else if (escolhaFase1 == 2) {
+        alert(" ");
+        window.location.assign("./meral2.html");
+    } else {
+        alert("Por mais que seja difícil, você deve escolher. Digite 1 ou 2 para fazer a escolha de Meral.");
+        escolha();
+    }
+
+}
+   </script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <!-- Fonte do Google-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Cenário 1 : Campo. </h1>
+        <hr>
+        <br> 
+        <a href="https://ibb.co/KVfnj9v"><img src="https://i.ibb.co/KVfnj9v/meral.png" alt="meral" border="0" class="image"></a>
+        <br>
+        <br>
+        <p>Eu sou Meral. Eu tenho 18 anos e vivo meus dias rodeada pelas árvores, cuidando da lavoura com as minhas irmãs. Nossa mãe se foi há pouco tempo e os homens da aldeia, por mais que surjam, de tempos em tempos, passam a vida ao mar, pescando e muito provavelmente se perdendo por terras longínquas. 
+        </p>
+        <p>Hoje era mais um dia de céu azul e tranquilo. As minhas irmãs estavam explorando o bosque, enquanto eu estendia algumas roupas recém lavadas na nascente. Eu estava distraída com o silêncio : o som da grama farfalhando, pássaros cantando… nesses omentos, conseguimos ouvir nossa voz interior, quase que como nos abraçando. Contemplamos o todo, o universo existente em cada uma de nós, até que… 
+        </p><br>
+       <p>Cavalos?</p>
+       <p>
+        Não era muito comum ouvir o casco de cavalos tão longe da aldeia. Me ericei, saindo do meu estado de contemplação diária, olhando em direção ao barulho. 
+        <br>
+        Cerca de 6 cavalos com homens montados se aproximavam. Algo me dizia que havia algo de errado; respirei fundo e me ajeitei, saindo por detrás dos vestidos e me aproximando, a medida que eles chegavam mais perto : 
+        <br>
+        - Você é Amaia, a Artesã? - Perguntou o homem que vinha à frente. Suas vestes eram robustas, assim como o outro que ele trazia ao corpo. No seu pescoço, carregava uma grande corrente dourada, com um crucifixo ao meio. Minha mãe havia sido uma conhecida artesã da nossa aldeia; ela sonhava com os desenhos das vestes que fazia, de forma que de tempos em tempos, os pescadores, quando em terra, traziam moedas de ouro para trocar por suas túnicas adornadas. 
+        <br>
+        - Não, senhor. Sou Meral, a filha dela. - O homem me olhou, por cima e perguntou :
+        <br>
+        - E onde ela está? 
+       </p>
+        <br>
+    <hr>
+    <p>Você decide...<br>
+      1 - Falar a verdade sobre sua mãe.<br>
+      2 - Ficar em silêncio. 
+    </p>
+    <button type="button" class="button" onclick="escolha()">Escolha</button>
+    <br>
+    <br>
+  </div>
+    </body>

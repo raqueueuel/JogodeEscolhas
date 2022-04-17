@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>As Bruxas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylechars.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <!--Nota : Por algum motivo, creio que do meu sistema operacional que fez uma
+              ...total confusão ao gerenciar as pastas, eu não consegui importar o script em outro arquivo
+              ... próprio para JS. Desse modo, optei por usar o script local aqui mesmo, mesmo sabendo que não é
+              ... a melhor prática. -->
+   <script>
+     function escolha() {
+    let escolhaFase1 = prompt("Você escolhe a opção 1 ou a opção 2?");
+
+    if (escolhaFase1 == 1) {
+        alert("Você responde 'Já disse que o Lorde Parsons não está aqui para tratar sobre qualquer assunto, Sor. Tenha um bom dia.', e bate a porta na cara do Monsenhor e dos guardas. Horas mais tarde, sua casa suspeitosamente tem um incêndio e todas as pessoas, incluindo você, perecem com as chamas. Fim do jogo.");
+        window.location.assign("../index.html");
+    } else if (escolhaFase1 == 2) {
+        alert("Você acena positivamente e abre passagem para que o Monsenhor e os guardas entrem.");
+        window.location.assign("./frieda2.html");
+    } else {
+        alert("Por mais que seja difícil, você deve escolher. Digite 1 ou 2 para fazer a escolha de Meral.");
+        escolha();
+    }
+
+}
+   </script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <!-- Fonte do Google-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Cenário 1 : Sala do Ateliê. </h1>
+        <hr>
+        <br> 
+        <a href="https://ibb.co/Trb6FM3"><img src="https://i.ibb.co/Trb6FM3/frieda.png" alt="frieda" border="0" class="image"></a>
+        <br>
+        <br>
+        <p>
+            Eu me chamo Frieda e tenho 23 anos. Recentemente eu me casei com o nobre Sr. Parsons, mas devo dizer que meu marido não me incomoda, uma vez que sempre está viajando nas suas expedições. Hoje eu não posso reclamar tanto da minha vida, já que passo meus dias fazendo o que amo sem ser interrompida ou questionada, que é pintar.<br>
+            Jack é um bom homem. Ele providenciou que o maior cômodo da nossa casa se tornasse meu ateliê e meus melhores quadros vivem espalhados pelas salas e pelos quartos. Ele me incentivou quando meu próprio pai me recriminava dizendo que não era próprio para uma mulher usar as mãos para fazer qualquer coisa além de segurar uma criança, quanto mais retratando coisas que eu via nos meus sonhos. Jack ofereceu um bom dote e meu pai viu a chance perfeita de finalmente "me colocar nos trilhos". 
+            <br>
+            Acho cômico pensar como os planos do velho vieram por água abaixo, de qualquer forma. <br>
+            Eu estava trabalhando na minha última tela, quando parei para contemplá-la. Era o retrato do meu último sonho : o bosque, no seu esplendor noturno e ao centro havia mais um pequeno detalhe que eu estava com o pincel a postos para começar… até ser interrompida pela minha ama : 
+            <br>
+            - Milady - Disse Frigg empurrando a porta do ateliê - Alguns fardas reais e um clérigo estão na porta. 
+            <br>
+            - Ora, Frigg, diga a eles que o Sr. Parsons está numa longa expedição. Que voltem daqui há 5 luas, mais ou menos. - Respondi, sorrindo. Frigg parecia desconcertada e insistiu - …eu informei sobre a ausência do Lorde Parsons, mas eles insistiram que queriam vê-la, minha senhora. 
+            <br>
+            Me remexi na minha cadeira e me levantei, ajeitando meu vestido. Era algo inusual que qualquer enviado real viesse diretamente a qualquer pessoa; geralmente, mandam um mensageiro e um decreto. Sentia haver algo de errado e expressei um breve olhar de preocupação para Frigg, que me acompanhou até a porta : 
+            <br>
+            - Olá, eu sou a Senhora Frieda. Como minha ama, Frigg, informou, o Lorde Parsons está numa expedição, mas assim que ele chegar irei informá-lo da visita dos senhores… - disse, falando da porta e prestes a me virar, quando o tal clérigo que estava a frente deu um passo à frente e disse : 
+            <br>
+            - Lady Frieda… a senhora é bastante conhecida pelas suas pinturas. Afinal, perdão não me apresentar… eu sou o Monsenhor Torquemada. - Disse o Monsenhor, sorrindo amarelo - o motivo da nossa visita, Senhora, é que estamos passando por uma perigosa onda de possessões demoníacas no nosso país. A minha função, a função da Igreja, quero dizer, é garantir que todas as pessoas clementes à Deus estejam seguras e livres de qualquer espírito maligno… - Ele disse, me encarando. Olhei rapidamente para Frigg,  que parecia tão confusa quanto eu. Porém, bem mais que confusão, eu sentia que havia algo de errado… espírito maligno? - …então, minha Senhora, podemos entrar? - O monsenhor perguntou, dando mais um passo à frente. 
+       </p>
+        <br>
+    <hr>
+    <p>Você decide...<br>
+      1 - Se recusar a deixá-lo entrar. <br>
+      2 - Deixá-lo entrar. 
+    </p>
+    <button type="button" class="button" onclick="escolha()">Escolha</button>
+    <br>
+    <br>
+  </div>
+    </body>

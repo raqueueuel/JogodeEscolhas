@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>As Bruxas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylechars.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <!--Nota : Por algum motivo, creio que do meu sistema operacional que fez uma
+              ...total confusão ao gerenciar as pastas, eu não consegui importar o script em outro arquivo
+              ... próprio para JS. Desse modo, optei por usar o script local aqui mesmo, mesmo sabendo que não é
+              ... a melhor prática. -->
+   <script>
+     function escolha() {
+    let escolhaFase1 = prompt("Você escolhe a opção 1 ou a opção 2?");
+
+    if (escolhaFase1 == 1) {
+        alert("Você assente e acompanha o Monsenhor. Antes de passar pela porta em direção a carruagem, você segura os dedos de Frigg rapidamente, como um alento. Algo lhe dizia que talvez você não fosse vê-la tão cedo…");
+        window.location.assign("./frieda2.html");
+    } else if (escolhaFase1 == 2) {
+        alert("Você olha perplexa para o Monsenhor e diz ‘Pegue seus homens e saia da minha casa, Sor. Não recebo ordens de lunáticos.’. O Monsenhor massageia as têmporas e anda vagarosamente para fora do ateliê. De repente, ele segura Frigg pelo braço e a joga dentro da sala, batendo a porta e comandando : ‘Matem-nas’. Os soldados promovem um perverso e covarde derramamento de sangue seu e de Frigg, infelizmente. Fim do jogo.");
+        window.location.assign("../index.html");
+    } else {
+        alert("Por mais que seja difícil, você deve escolher. Digite 1 ou 2 para fazer a escolha de Meral.");
+        escolha();
+    }
+
+}
+   </script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <!-- Fonte do Google-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Cenário 1 : Sala do Ateliê. (Continuação) </h1>
+        <hr>
+        <br> 
+        <a href="https://ibb.co/Trb6FM3"><img src="https://i.ibb.co/Trb6FM3/frieda.png" alt="frieda" border="0" class="image"></a>
+        <br>
+        <br>
+        <p>
+            Frigg parecia inquieta, ou melhor, todos da casa estavam. Não podia negar, a presença dos guardas e do tal Monsenhor era assustadora e, ao meu ver, sequer fazia sentido. Ele inspecionava cada detalhe com os olhos, cada quadro e cada detalhe das pinturas. <br>
+            Caminhávamos eu e Frigg atrás do Monsenhor, até que chegamos na porta do ateliê : 
+            <br>
+            - Vossa santidade… aí é apenas o local onde faço minhas pinturas. Não há nada demais… - Disse, um tanto trêmula.
+            <br>
+            - Pois são nos lugares que menos esperamos, milady, que o mal se esconde. - Ele falou, puxando a porta bruscamente e adentrando o local. 
+            <br>
+            O Monsenhor olhava em silêncio para as minhas pinturas : todas as imagens dos meus sonhos, das fadas e dos seres que me visitavam; além, claro, da minha última pintura inacabada : 
+            <br>
+            - Senhora… receio que deva nos acompanhar. - Disse o Monsenhor. Olhei apreensiva para Frigg, que observava na porta enquanto os soldados adentravam o ateliê.
+            
+       </p>
+        <br>
+    <hr>
+    <p>Você decide...<br>
+      1 - Ir com o Monsenhor. <br>
+      2 - Se recusar a ir. 
+    </p>
+    <button type="button" class="button" onclick="escolha()">Escolha</button>
+    <br>
+    <br>
+  </div>
+    </body>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>As Bruxas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylechars.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <!--Nota : Por algum motivo, creio que do meu sistema operacional que fez uma
+              ...total confusão ao gerenciar as pastas, eu não consegui importar o script em outro arquivo
+              ... próprio para JS. Desse modo, optei por usar o script local aqui mesmo, mesmo sabendo que não é
+              ... a melhor prática. -->
+   <script>
+     function escolha() {
+    let escolhaFase1 = prompt("Você escolhe a opção 1 ou a opção 2?");
+
+    if (escolhaFase1 == 1) {
+        alert("Você começa a gritar 'socorro', atraindo a atenção dos guardas. Rapidamente entram na sua cela e lhe castigam a noite toda. Nenhuma corda foi jogada e você só consegue pensar que estava delirando. Você vai pra fogueira no dia seguinte. Fim do jogo.");
+        window.location.assign("../index.html");
+    } else if (escolhaFase1 == 2) {
+        alert("Você fica em silêncio, olhando para cima, até que vê uma corda descendo pela janela no teto.");
+        window.location.assign("./frieda4.html");
+    } else {
+        alert("Por mais que seja difícil, você deve escolher. Digite 1 ou 2 para fazer a escolha de Frieda.");
+        escolha();
+    }
+
+}
+   </script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <!-- Fonte do Google-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Cenário 2 : Interrogatório </h1>
+        <hr>
+        <br> 
+        <a href="https://ibb.co/Trb6FM3"><img src="https://i.ibb.co/Trb6FM3/frieda.png" alt="frieda" border="0" class="image"></a>
+        <br>
+        <br>
+        <p> Chegamos ao que parecia ser a sala de um tribunal; já havia ido a algo assim, certa feita, com Jack, para dispormos sobre algumas terras do falecido irmão dele, à época. Sentei-me no banco do réu, enquanto Torquemada subiu à tribuna. </p> 
+        <br>
+        <p>Alguns outros clérigos ocupavam postos ao seu lado, também.  Ele puxou um rolo de papel e começou: </p> <br>
+        <p> - Senhora Frieda de Parsons. - Bradou, Torquemada - A Senhora está nesse presente julgamento para responder às acusações de blasfêmia, culto a deuses pagãos, bruxaria…</p>
+        <br>
+        <p>
+            - Isso não faz sentido algum! - Interrompi, me levantando. Prontamente os guardas se aproximaram, puxando as espadas, no que eu acabei me sentando novamente, acuada. </p> 
+            <p>
+            - Silêncio! Não basta todos esses crimes, essa mulher, serva do Diabo, é uma adúltera degenerada! Existem provas cabais do pecado que ela comete com a própria ama! </p>
+            <br>
+            <p>
+                No momento, eu congelei. O mundo parecia fora do ar : aquilo realmente estava acontecendo? Ouvia, distantemente, o Monsenhor gritar coisas como "você nega as acusações? Madame Frieda?!". Todas as minhas memórias com Frigg vieram à tona. Como eu poderia estar sendo punida por amar? </p>
+            <br>
+            <p>
+                - Frigg… - Murmurei, pensando alto. </p>
+                <p> - … Não existindo contestação…- Disse o Monsenhor - Eu declaro Frieda de Parsons condenada à morte pela fogueira. Levem-na para as masmorras. Em uma semana, teremos a execução pública. Fim do Julgamento. </p> 
+            <br>
+            <p>O Monsenhor bateu o martelo e foi como se eu despertasse; mas, era tarde demais. </p>
+            <br><br>
+            <p>(...)</p>
+            <br><br>
+            <p> Os guardas me jogaram numa cela escura e úmida das masmorras. Passado um tempo, surgiram novamente, dessa vez com dois clérigos, que rasgaram minhas vestes, me jogaram um balde de água gélida e então usaram uma navalha para cortar meu cabelo. </p> 
+            <p> Ao final, eu estava irreconhecível : meu couro cabeludo sangrava e meu vestido de seda fora substituído por um saco de batata.</p> 
+            <p> Eu só conseguia chorar. Mas não imaginava que o pior ocorreria com a visita do Monsenhor pela noite…</p> 
+            <p><em>A dor da tortura era desumanizante. O algoz perfurava minha pele com instrumentos diversos, dando alguma justificativa chula. Em determinado momento, mesmo quando ele já havia ido, sua voz ecoava na minha mente e eu me sentia inteiramente fragmentada. 
+            Tentava me apegar aos dias bons, às memórias dos passeios nos jardins, com Frigg…<em></p> 
+            <br>
+            <p> Estava deitada, quando ouvi uma voz : </p><p>
+                - Frieda, venha… - </p>
+            <br>
+            <p>Não era o Monsenhor; mas como saber se era real? Olhei para os lados, até ver uma sombra acima, na pequena janela no alto da cela. Era uma distância relativamente alta e eu sequer imaginava que para acima dava em qualquer lugar; na realidade, só vim perceber de onde vinha a luz da lua nesse exato momento : </p><p> 
+            - Jogarei uma corda e irei puxá-la. Seja rápida. - Disse a voz.</p>
+        <br>
+    <hr>
+    <p>Você decide...<br>
+      1 - Começar a gritar para que te socorram. <br>
+      2 - Ficar em silêncio, esperando o que vai ocorrer.  
+    </p>
+    <button type="button" class="button" onclick="escolha()">Escolha</button>
+    <br>
+    <br>
+  </div>
+    </body>
